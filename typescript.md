@@ -39,7 +39,7 @@ tsconfig.jsonが存在するディレクトリは、そのディレクトリがT
 
 [https://qiita.com/ryokkkke/items/390647a7c26933940470](https://qiita.com/ryokkkke/items/390647a7c26933940470)
 
-```json
+```yaml
 {
   "compilerOptions": {
     "target": "es2018",
@@ -50,35 +50,35 @@ tsconfig.jsonが存在するディレクトリは、そのディレクトリがT
       "esnext.asynciterable",
       "dom"
     ],
-    // <https://maku.blog/p/emdtiio/>
-    // <https://omochizo.netlify.app/posts/2020/08/commonjs-esm/>
-    // これが一番わかりやすい
-    // <https://omochizo.netlify.app/posts/2020/08/commonjs-esm/>
+    # <https://maku.blog/p/emdtiio/>
+    # <https://omochizo.netlify.app/posts/2020/08/commonjs-esm/>
+    # これが一番わかりやすい
+    # <https://omochizo.netlify.app/posts/2020/08/commonjs-esm/>
     "esModuleInterop": true,
-    // デコレーターを使った時に出るエラーを消すための記述
-    // <https://qiita.com/HorikawaTokiya/items/54d90f83df4e72e27631>
-    // デコレーターについて→https://www.typescriptlang.org/docs/handbook/decorators.html#decorators
+     デコレーターを使った時に出るエラーを消すための記述
+    # <https://qiita.com/HorikawaTokiya/items/54d90f83df4e72e27631>
+    # デコレーターについて→https://www.typescriptlang.org/docs/handbook/decorators.html#decorators
     "experimentalDecorators": true,
-    // JSONファイルから型の抽出・生成を行えるようにするための設定
-    // <https://kakkoyakakko2.hatenablog.com/entry/2019/12/03/003000>
-    // <https://qiita.com/MasanobuAkiba/items/98a678430fa192c0f8c5>
+    # JSONファイルから型の抽出・生成を行えるようにするための設定
+    # <https://kakkoyakakko2.hatenablog.com/entry/2019/12/03/003000>
+    # <https://qiita.com/MasanobuAkiba/items/98a678430fa192c0f8c5>
     "resolveJsonModule": true,
-    // jsを使えるようにするための設定
+    # jsを使えるようにするための設定
     "allowJs": true,
-    // ソースマップの有効か
-    // <https://developer.mozilla.org/ja/docs/Tools/Debugger/How_to/Use_a_source_map>
-    // <https://www.wetch.co.jp/output-source-map/>
+    # ソースマップの有効か
+    # <https://developer.mozilla.org/ja/docs/Tools/Debugger/How_to/Use_a_source_map>
+    # <https://www.wetch.co.jp/output-source-map/>
     "sourceMap": true,
-    // <https://maku.blog/p/7b9432m/>
+    # <https://maku.blog/p/7b9432m/>
     "strict": true,
-    // trueにするとコンパイル結果を出力しなくなる。
-    // tscによる型チェックだけを機能として利用したい場合（Babelなど他ツールが実際のコンパイルを行う場合）に使用する。
-    // <https://qiita.com/ryokkkke/items/390647a7c26933940470#noemit>
+    # trueにするとコンパイル結果を出力しなくなる。
+    # tscによる型チェックだけを機能として利用したい場合（Babelなど他ツールが実際のコンパイルを行う場合）に使用する。
+    # <https://qiita.com/ryokkkke/items/390647a7c26933940470#noemit>
     "noEmit": true,
-    // <https://qiita.com/ryokkkke/items/390647a7c26933940470#baseurl>
+    # <https://qiita.com/ryokkkke/items/390647a7c26933940470#baseurl>
     "baseUrl": ".",
-    // インポートする際の記述を簡単にするための設定
-    // <https://www.agent-grow.com/self20percent/2019/03/11/typescript-paths-work-careful/>
+    # インポートする際の記述を簡単にするための設定
+    # <https://www.agent-grow.com/self20percent/2019/03/11/typescript-paths-work-careful/>
     "paths": {
       "~/*": [
         "src/*"
