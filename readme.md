@@ -1,0 +1,58 @@
+# 概要
+
+
+https://docs.google.com/document/d/19fndV_3c6a0pI5oxiVVmPlqCE-IWM8xBbqL7IzKy2Y8/edit#heading=h.y9ws57j6oe98
+
+↑のチュートリアルで説明されていない部分を補足するような形のメモにできればと。。。
+
+# 各ファイル解説
+
+<!-- ![index.png](index.png) -->
+<img src="./index.png" width="300">
+
+- github/lint.yml
+
+- vscode/setting.json
+ファイルのコメントに書いてある通りなので省略
+
+- src
+Nuxtjsの作業ディレクトリ(tsconfigのコンパイル対象)
+
+- .dockerignore
+dockerで無視するファイルを指定するもの
+
+- .editorconfig
+異なるエディター間でコードスタイルを統一するためのもの
+https://editorconfig.org/
+https://qiita.com/inabe49/items/d81fed3cf58ad751d915
+
+- .eslintrc.yml
+Eslintはjsのlintツール、その設定ファイル
+[https://qiita.com/mysticatea/items/f523dab04a25f617c87d](https://qiita.com/mysticatea/items/f523dab04a25f617c87d)
+[https://qiita.com/howdy39/items/6e2c75861bc5a14b2acf](https://qiita.com/howdy39/items/6e2c75861bc5a14b2acf)
+
+- .prettierrc.yml
+eslintと同じlint系ツール
+そのままだと競合するので、.eslintrcにそれを避ける設定を書く
+[https://qiita.com/yokori/items/57875c186ea3ee312d8c](https://qiita.com/yokori/items/57875c186ea3ee312d8c)
+    ```yaml
+    extends:
+        - "@nuxtjs/eslint-config-typescript"
+        - plugin:prettier/recommended
+        - prettier/@typescript-eslint
+    ```
+
+- tsconfig.json
+→ [typescript解説](./typescript.md)
+
+
+---
+
+[](%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E8%A7%A3%E8%AA%AC%209631ec66b3be44d0952abf4959ecc472/Untitled%208c7240169a45429c97b9db1d854c7184.md)
+
+- yarn.lock
+パッケージを指定するやつ
+yarn init したあとに任意のパッケージをyarn addすると自動的に作られる
+[npm,yarnのlockファイルの恩恵 - Qiita](https://qiita.com/youdays/items/9a98e43391414ec939e6)
+    > 昔のnpmはpackage.jsonしかなかったです。yarnはyarn.lockを作りました。これによってパッケージの依存関係がより厳密になりました。でもその後npmは同じ機能を持つpackage-lock.jsonを作りました。だから今はあんまり変わらない。
+[https://jsnotice.com/posts/2020-09-02/](https://jsnotice.com/posts/2020-09-02/)
