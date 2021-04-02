@@ -1,4 +1,4 @@
-# 概要
+# サーバーサイドエンジニア向けnuxtチュートリアルのチュートリアル(仮)
 
 https://docs.google.com/document/d/19fndV_3c6a0pI5oxiVVmPlqCE-IWM8xBbqL7IzKy2Y8/edit#heading=h.y9ws57j6oe98
 
