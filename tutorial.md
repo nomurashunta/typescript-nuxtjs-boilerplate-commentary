@@ -11,11 +11,11 @@ RSCSSとはどのようにCSSを書くかを定めた、CSS設計手法の一つ
 
 そもそもcss全くわからんという人は以下あたりざっくり読んでおくといいかも
 
-http://www.tohoho-web.com/css/basic.html
-https://developer.mozilla.org/ja/docs/Learn/CSS/First_steps/Getting_started
-https://saruwakakun.com/html-css/basic/css
+http://www.tohoho-web.com/css/basic.htm  
+https://developer.mozilla.org/ja/docs/Learn/CSS/First_steps/Getting_started  
+https://saruwakakun.com/html-css/basic/css  
 
-別に読まなくても問題ないように説明します
+別に読まなくても問題ないように説明します(多分)
 
 ### SASS、SCSSについて
 
@@ -225,7 +225,7 @@ export default class IndexPage extends Vue {}
 </style>
 ```
 
-各コンポーネントの対応関係がわかりやすいからではないかと思っている
+RSCSSと合わせると各コンポーネントと記述の対応関係がわかりやすくなってよいからではないか‥‥と予想
 
 
 
